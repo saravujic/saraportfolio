@@ -215,7 +215,45 @@ section img {
 
 main {
     grid-area: main;
-    background-color: blueviolet;
+    background-color: #F4B5EA;
+    padding-bottom: 20px;
+}
+
+main h2 {
+    text-align: center;
+    padding: 20px;
+    color: #2372F0;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+main p {
+    color: #2372F0;
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 5%;
+    padding-bottom: 35px;
+    line-height: 28px;
+}
+
+main h3 {
+    color: #2372F0;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: bolder;
+    font-size: 18px;
+    padding-bottom: 10px;
+    line-height: 28px;
+}
+
+main h4 {
+    color: #2372F0;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 28px;
 }
 
 footer {
