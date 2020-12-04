@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: helvetica -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.grid-container-projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "frontpagepic1 frontpagepic1 frontpagepic1 prontpagepic1"
+    "frontpagepic2 frontpagepic2 frontpagepic2 frontpagepic2"
+    "frontpagepic3 frontpagepic3 frontpagepic3 frontpagepic3"
+    "frontpagepic4 frontpagepic4 frontpagepic4 frontpagepic4"
+    "frontpagepic5 frontpagepic5 frontpagepic5 frontpagepic5"
+    "frontpagepic6 frontpagepic6 frontpagepic6 frontpagepic6"
+    "footer footer footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    background-color: blue;
+}
+
+.frontpagepic1 {
+    grid-area: frontpagepic1;
+    background-color: blueviolet;
+}
+
+.frontpagepic2 {
+    grid-area: frontpagepic2;
+    background-color: yellow;
+}
+
+.frontpagepic3 {
+    grid-area: frontpagepic3;
+    background-color: green;
+}
+
+.frontpagepic4 {
+    grid-area: frontpagepic4;
+    background-color: red;
+}
+
+.frontpagepic5 {
+    grid-area: frontpagepic5;
+    background-color: orange;
+}
+
+.frontpagepic6 {
+    grid-area: frontpagepic6;
+    background-color: brown;
+}
+
+footer {
+    grid-area: footer;
+    background-color: cadetblue;
+}
