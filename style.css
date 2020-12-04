@@ -110,6 +110,7 @@ span {
 .frontpagepic2 {
     grid-area: frontpagepic2;
     background-color: #F4B5EA;
+    border: none;
 }
 
 .frontpagepic2 img {
@@ -122,22 +123,54 @@ span {
 
 .frontpagepic3 {
     grid-area: frontpagepic3;
-    background-color: green;
+    background-color: #F4B5EA;
+}
+
+.frontpagepic3 img {
+    height: 70%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 20px;
 }
 
 .frontpagepic4 {
     grid-area: frontpagepic4;
-    background-color: red;
+    background-color: #F4B5EA;
+}
+
+.frontpagepic4 img {
+    height: 70%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 20px;
 }
 
 .frontpagepic5 {
     grid-area: frontpagepic5;
-    background-color: orange;
+    background-color: #F4B5EA;
+}
+
+.frontpagepic5 img {
+    height: 70%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 20px;
 }
 
 .frontpagepic6 {
     grid-area: frontpagepic6;
-    background-color: brown;
+    background-color: #F4B5EA;
+}
+
+.frontpagepic6 img {
+    height: 70%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 20px;
 }
 
 footer {
