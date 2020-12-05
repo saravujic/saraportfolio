@@ -382,27 +382,79 @@ header {
 
 .overskrift {
     grid-area: overskrift;
-    background-color: aquamarine;
+    background-color: #F4B5EA;
+}
+
+.overskrift h2 {
+    text-align: center;
+    padding: 20px;
+    color: #2372F0;
+    font-size: 25px;
+    font-weight: bolder
 }
 
 .folkdance1 {
     grid-area: folkdance1;
-    background-color: gray;
+    background-color: #F4B5EA;
+}
+
+.folkdance1 img {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 20px;
 }
 
 .folkdance2 {
     grid-area: folkdance2;
-    background-color: green;
+    background-color: #F4B5EA;
+}
+
+.folkdance2 img {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 20px;
 }
 
 .folkdance3 {
     grid-area: folkdance3;
-    background-color: honeydew;
+    background-color: #F4B5EA;
+}
+
+.folkdance3 img {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 20px;
 }
 
 .folkdancecreds {
     grid-area: folkdance;
-    background-color: hotpink;
+    background-color: #F4B5EA;
+    padding-bottom: 20px;
+}
+
+.folkdancecreds h3 {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 10px;
+}
+
+.folkdancecreds p {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 footer {
