@@ -176,18 +176,22 @@ span {
 footer {
     grid-area: footer;
     background-color: #F4B5EA;
+    padding: 20px;
+    align-items: center;
+    padding-left: 100px;
+    padding-bottom: 30px;
 }
 
 footer .fa {
-    padding: 15px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 26px;
     width: 30px;
     height: 30px;
     text-align: center;
-    place-items: center;
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
+    align-items: center;
 }
 
 footer .fa:hover {
@@ -195,17 +199,17 @@ footer .fa:hover {
 }
 
 footer .fa-facebook {
-  background: #2372F0;
+  background: #585858;
   color: #F3F6F4;
 }
 
 footer .fa-linkedin {
-    background: #2372F0;
+    background: #585858;
     color: #F3F6F4;
 }
 
 footer .fa-instagram {
-    background: #2372F0;
+    background: #585858;
     color: #F3F6F4;
 }
 
