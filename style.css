@@ -275,6 +275,7 @@ footer {
     "picture1 picture1 picture1 picture1"
     "picture2 picture2 picture2 picture2"
     "picture3 picture3 picture3 picture3"
+    "endtekst endtekst endtekst endtekst"
     "footer footer footer footer"
     ;
 }
@@ -286,22 +287,68 @@ header {
 
 .headline-tekst {
     grid-area: headline;
-    background-color: aquamarine;
+    background-color: #F4B5EA;
+}
+
+.headline-tekst h2 {
+    text-align: center;
+    padding: 20px;
+    color: #2372F0;
+    font-size: 25px;
+    font-weight: bolder
 }
 
 .picture1 {
     grid-area: picture1;
-    background-color: chartreuse;
+    background-color: #F4B5EA;
+}
+
+.picture1 img {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 20px;
 }
 
 .picture2 {
     grid-area: picture2;
-    background-color: chocolate;
+    background-color: #F4B5EA;
+}
+
+.picture2 img {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .picture3 {
     grid-area: picture3;
-    background-color: darkcyan;
+    background-color: #F4B5EA;
+}
+
+.picture3 img {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 20px;
+}
+
+.end-tekst {
+    grid-area: endtekst;
+    background-color: #F4B5EA;
+    padding-bottom: 20px;
+}
+
+.end-tekst p {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 footer {
