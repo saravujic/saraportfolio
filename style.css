@@ -360,6 +360,56 @@ footer {
 
 
 /*Her starter stylingen af indholdet på folk dance undersiden*/
+.grid-container-folkdance {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "overskrift overskrift overskrift overskrift"
+    "folkdance1 folkdance1 folkdance1 folkdance1"
+    "folkdance2 folkdance2 folkdance2 folkdance2"
+    "folkdance3 folkdance3 folkdance3 folkdance3"
+    "folkdance folkdance folkdance folkdance"
+    "footer footer footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    background-color: #2372F0;
+}
+
+.overskrift {
+    grid-area: overskrift;
+    background-color: aquamarine;
+}
+
+.folkdance1 {
+    grid-area: folkdance1;
+    background-color: gray;
+}
+
+.folkdance2 {
+    grid-area: folkdance2;
+    background-color: green;
+}
+
+.folkdance3 {
+    grid-area: folkdance3;
+    background-color: honeydew;
+}
+
+.folkdancecreds {
+    grid-area: folkdance;
+    background-color: hotpink;
+}
+
+footer {
+    grid-area: footer;
+    background-color: indigo;
+}
+
 
 /*Her slutter stylingen af indholdet på folk dance undersiden*/
 
