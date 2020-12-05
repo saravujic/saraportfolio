@@ -477,5 +477,48 @@ footer {
 
 
 /*Her starter stylingen af indholdet på the space odyssey undersiden*/
+.grid-container-spaceodyssey {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "firsttekst firsttekst firsttekst firsttekst"
+    "spacebillede1 spacebillede1 spacebillede1 spacebillede1"
+    "spacebillede2 spacebillede2 spacebillede2 spacebillede2"
+    "spacebillede3 spacebillede3 spacebillede3 spacebillede3"
+    "spacecreds spacecreds spacecreds spacecreds"
+    "footer footer footer footer"
+    ;
+}
 
+header {
+    grid-area: header;
+    background-color: #2372F0;
+}
+
+.firsttekst {
+    grid-area: firsttekst;
+    background-color: #F4B5EA;
+}
+
+.spacebillede1 {
+    grid-area: spacebillede1;
+    background-color: aqua;
+}
+
+.spacebillede2 {
+    grid-area: spacebillede2;
+    background-color: chocolate;
+}
+
+.spacebillede3 {
+    grid-area: spacebillede3;
+    background-color: darkmagenta;
+}
+
+.spacecreds {
+    grid-area: spacecreds;
+    background-color: lightcoral;
+}
 /*Her slutter stylingen af indholdet på folk the space odyssey undersiden*/
