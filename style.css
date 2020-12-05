@@ -265,6 +265,49 @@ footer {
 
 
 /*Her starter stylingen af indholdet på malibu undersiden*/
+.grid-container-malibu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "headline headline headline headline"
+    "picture1 picture1 picture1 picture1"
+    "picture2 picture2 picture2 picture2"
+    "picture3 picture3 picture3 picture3"
+    "footer footer footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    background-color: #2372F0;
+}
+
+.headline-tekst {
+    grid-area: headline;
+    background-color: aquamarine;
+}
+
+.picture1 {
+    grid-area: picture1;
+    background-color: chartreuse;
+}
+
+.picture2 {
+    grid-area: picture2;
+    background-color: chocolate;
+}
+
+.picture3 {
+    grid-area: picture3;
+    background-color: darkcyan;
+}
+
+footer {
+    grid-area: footer;
+    background-color: darkkhaki;
+}
 
 /*Her slutter stylingen af indholdet på malibu undersiden*/
 
