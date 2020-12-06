@@ -28,6 +28,17 @@ header {
     background-color:#2372F0;
 }
 
+.logo h1 {
+    color: #F4B5EA;
+    font-weight: bolder;
+    font-size: 40px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbar a {
+    text-decoration: none;
+}
 
 /*Burger menu start*/
 .menu {
@@ -80,8 +91,10 @@ span {
     font-size: 30px;
     cursor: pointer;
     color: #000000;
-    margin-left: 90%;
-    margin-top: 20px;
+    float: right;
+    margin-right: 30px;
+    margin-top: -12%;
+    margin-bottom: 10px;
 }  
 
 /*Burger menu end*/
