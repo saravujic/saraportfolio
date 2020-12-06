@@ -119,7 +119,47 @@ span {
     margin-left: 15%;
     margin-right: 15%;
     padding-bottom: 20px;
+    display: block;
 }
+
+.overlay-container {
+    position: relative;
+  }
+
+.image1 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70%;
+    width: 70%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F4B5EA;
+}
+
+.overlay-container:hover .overlay1 {
+    opacity: 0.8;
+  }
+
+.text {
+    color: #F3F6F4;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 .frontpagepic2 {
     grid-area: frontpagepic2;
