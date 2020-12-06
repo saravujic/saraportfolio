@@ -22,6 +22,7 @@
     ;
 }
 
+/*Styling af header på alle siderne*/
 header {
     grid-area: header;
     background-color:#2372F0;
@@ -85,7 +86,7 @@ span {
 
 /*Burger menu end*/
 
-/*Her begynder stylingen af billederne på siden*/
+/*Her begynder stylingen af billederne på PROJECTS siden*/
 .frontpagepic1 {
     grid-area: frontpagepic1;
     background-color: #F4B5EA;
@@ -172,6 +173,8 @@ span {
     margin-right: 15%;
     padding-bottom: 20px;
 }
+
+/*Her begynder stylingen af footer på alle sider*/
 
 footer {
     grid-area: footer;
