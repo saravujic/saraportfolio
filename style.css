@@ -673,3 +673,19 @@ footer {
     background-color: #F4B5EA;
 }
 /*Her slutter stylingen af indholdet på folk the space odyssey undersiden*/
+
+/*Responsive for desktop*/
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+
+/*Responsive for tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    /* CSS */
+    
+  }
+
+  
