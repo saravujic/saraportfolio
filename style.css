@@ -434,6 +434,7 @@ nav a {
     display: flex;
     flex-direction: row;
     text-align: center;
+    justify-content: center;
     padding: 10px;
     color: #2372F0;
     font-size: 30px;
@@ -466,6 +467,7 @@ nav a {
     font-size: 17px;
     line-height: 28px;
     padding-bottom: 15px;
+    margin-left: 15px;
 }
 
 .folkdancetekst p {
@@ -473,6 +475,7 @@ nav a {
     font-weight: bolder;
     font-size: 17px;
     line-height: 28px;
+    margin-left: 15px;
 }
 
 /*Styling slutter for folkdance siden*/
@@ -527,6 +530,7 @@ nav a {
     font-size: 17px;
     line-height: 28px;
     padding-bottom: 15px;
+    margin-left: 15px;
 }
 
 .spacetekst p {
@@ -535,6 +539,7 @@ nav a {
     font-weight: bolder;
     font-size: 17px;
     line-height: 28px;
+    margin-left: 15px;
 }
 /*Styling slutter for spaceodyssey siden*/
 
