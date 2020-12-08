@@ -84,43 +84,6 @@ nav a {
 }
 /*styling af navigationsbar og header slutter*/
 
-/*responsive for dekstop*/
-@media screen and (min-width:800px) {
-    /*Responsiv navbar*/
-    .burger {
-        display: none;
-    }
-
-    header {
-        display: grid;
-        grid-template-columns: 1fr auto minmax(700px, 3fr);
-    }
-
-    nav {
-        display: flex;
-        grid-column: 3/4;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    nav ul {
-        all: unset;
-        list-style: none;
-        display: flex;
-    }
-
-    nav li {
-        margin-bottom: 0;
-        margin-right: 16px;
-    }
-
-    /*responsiv projects side*/
-    .welcome h2 {
-        all: unset;
-    }
-}
-
-
 
 /*Styling begynder for projects siden*/
 .flex-container-projects {
@@ -601,3 +564,77 @@ footer{
     opacity: 0.6;
 }
 /*styling af footer slutter*/
+
+
+
+/*responsive for dekstop og tablet*/
+@media screen and (min-width:800px) {
+    /*Responsiv navbar*/
+    .burger {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(700px, 3fr);
+    }
+
+    nav {
+        display: flex;
+        grid-column: 3/4;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        all: unset;
+        list-style: none;
+        display: flex;
+    }
+
+    nav li {
+        margin-bottom: 0;
+        margin-right: 16px;
+    }
+
+    /*responsiv projects side*/
+    .welcome h2 {
+        all: unset;
+    }
+
+    /*Responsiv på about me siden*/
+    .flex-container-aboutme {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    /*Responsiv på malibu siden*/
+
+    /*Responsiv på Folkdance siden*/
+
+    /*Responsiv Space Odyssey side*/
+    .flex-container-spaceodyssey {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .space1 img {
+        display: flex;
+        flex-direction: row;
+        order: 1;
+    }
+
+    .space2 img {
+        display: flex;
+        flex-direction: row;
+        order: 2;
+    }
+
+    .space3 img {
+        display: flex;
+        flex-direction: row;
+        order: 3;
+    }
+
+}
