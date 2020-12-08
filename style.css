@@ -125,7 +125,7 @@ nav a {
 }
 
 section {
-    padding: 20px;
+    margin: 20px;
 }
 
 .welcome h2 {
@@ -156,7 +156,7 @@ section {
     width: 300px;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: #F4B5EA;
   }
   
   .malibu:hover .overlay1 {
@@ -165,7 +165,9 @@ section {
   
   .text {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
+    margin: 3px;
+    padding: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
