@@ -1,159 +1,170 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: helvetica -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 
-/*Her starter stylingen af indholdet på PROJECTS undersiden*/
-    /*Grid container på projects siden*/
-.grid-container-projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header header"
-    "frontpagepic1 frontpagepic1 frontpagepic1 prontpagepic1"
-    "frontpagepic2 frontpagepic2 frontpagepic2 frontpagepic2"
-    "frontpagepic3 frontpagepic3 frontpagepic3 frontpagepic3"
-    "frontpagepic4 frontpagepic4 frontpagepic4 frontpagepic4"
-    "frontpagepic5 frontpagepic5 frontpagepic5 frontpagepic5"
-    "frontpagepic6 frontpagepic6 frontpagepic6 frontpagepic6"
-    "footer footer footer footer"
-    ;
+body {
+    background-color: #F4B5EA;
 }
 
-/*Styling af header på alle siderne*/
+img {
+    display: block;
+}
+
+/*styling af navigationsbar og header*/
 header {
-    grid-area: header;
-    background-color:#2372F0;
-}
-
-.logo h1 {
-    color: #F4B5EA;
-    font-weight: bolder;
-    font-size: 40px;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.navbar a {
-    text-decoration: none;
-}
-
-/*Burger menu start*/
-.menu {
-    height: 100%;
-    width: 0;
+    background-color: #2372F0;
+    text-align: center;
     position: fixed;
-    z-index: 1;
+    width: 100%;
+    z-index: 100;
+}
+
+.toggler {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    color: #F4B5EA;
+    font-size: 55px;
+    font-weight: bolder;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 16px;
+    background-color: #F4B5EA;
+    right: -100%;
+    transition: all 0.5s;
+    list-style: none;
+}
+
+nav li {
+    margin-top: 40px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: #F3F6F4;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.toggler:checked ~ nav ul {
+    left: 0;
+}
+
+.burger {
+    position: absolute;
+    font-size: 35px;
     top: 0;
     right: 0;
-    background-color: #F4B5EA;
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-.menu-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-
-
-.menu a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 3em;
-    color: #2372F0;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .menu a:hover {
-    color: #F3F6F4;
-  }
-  
-  .menu a:hover, .overlay a:focus {
-    color: black;
-  }
-  
-  .menu .closebtn {
-    position: absolute;
-    top: 0.3rem;
-    right: 1rem;
-    font-size: 50px;
-    color: #2372F0;
-  }
-
-span {
-    font-size: 30px;
+    margin-right: 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    color: #000000;
-    float: right;
-    margin-right: 30px;
-    margin-top: -12%;
-    margin-bottom: 10px;
-}  
-
-/*Burger menu end*/
-
-/*Her begynder stylingen af billederne på PROJECTS siden*/
-.frontpagepic1 {
-    grid-area: frontpagepic1;
-    background-color: #F4B5EA;
 }
 
-.frontpagepic1 h2 {
-    color: #2372F0;
-    text-align: center;
+/*responsive for dekstop*/
+@media screen and (min-width:800px) {
+    .burger {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(700px, 3fr);
+    }
+
+    nav {
+        display: flex;
+        grid-column: 3/4;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        all: unset;
+        list-style: none;
+        display: flex;
+    }
+
+    nav li {
+        margin-bottom: 0;
+        margin-right: 16px;
+    }
+}
+
+/*styling af navigationsbar og header slutter*/
+
+/*Styling begynder for projects siden*/
+.flex-container-projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
     padding: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+.welcome h2 {
+    color: #2372F0;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
 }
 
-.frontpagepic1 img {
-    height: 70%;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-bottom: 20px;
+.malibu img {
+    width: 300px;
+    height: 300px;
     display: block;
 }
 
-.overlay-container {
+.malibu {
     position: relative;
-    width: 100%;
-  }
-
-.image1 {
-    display: block;
-    width: 70%;
-    height: auto;
 }
 
 .overlay1 {
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    right: 0;
+    height: 300px;
+    width: 300px;
     opacity: 0;
     transition: .5s ease;
-    background-color: #2372F0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.overlay-container:hover .overlay1 {
+    background-color: #008CBA;
+  }
+  
+  .malibu:hover .overlay1 {
     opacity: 0.8;
   }
-
-.text {
-    color: #F3F6F4;
+  
+  .text {
+    color: white;
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -164,164 +175,61 @@ span {
     text-align: center;
   }
 
-.frontpagepic2 {
-    grid-area: frontpagepic2;
-    background-color: #F4B5EA;
-    border: none;
+.folkdance img {
+    width: 300px;
+    height: 300px;
 }
 
-.frontpagepic2 img {
-    height: 70%;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-bottom: 20px;
+.spaceodyssey img {
+    width: 300px;
+    height: 300px;
 }
 
-.frontpagepic3 {
-    grid-area: frontpagepic3;
-    background-color: #F4B5EA;
+.portrait img {
+    width: 300px;
+    height: 300px;
 }
 
-.frontpagepic3 img {
-    height: 70%;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-bottom: 20px;
+.belong img {
+    width: 300px;
+    height: 300px;
 }
 
-.frontpagepic4 {
-    grid-area: frontpagepic4;
-    background-color: #F4B5EA;
+.zumba img {
+    width: 300px;
+    height: 300px;
 }
 
-.frontpagepic4 img {
-    height: 70%;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-bottom: 20px;
-}
+/*Styling slutter for projects siden*/
 
-.frontpagepic5 {
-    grid-area: frontpagepic5;
-    background-color: #F4B5EA;
-}
+/*Styling begynder for about me siden*/
 
-.frontpagepic5 img {
-    height: 70%;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-bottom: 20px;
-}
-
-.frontpagepic6 {
-    grid-area: frontpagepic6;
-    background-color: #F4B5EA;
-}
-
-.frontpagepic6 img {
-    height: 70%;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-bottom: 20px;
-}
-
-/*Her begynder stylingen af footer på alle sider*/
-
-footer {
-    grid-area: footer;
-    background-color: #F4B5EA;
-    padding: 20px;
+.flex-container-aboutme {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding-left: 100px;
-    padding-bottom: 30px;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-footer .fa {
+.intro img {
+    display: flex;
+    height: 85%;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
-    font-size: 26px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    align-items: center;
+    padding-top: 80px;
 }
-
-footer .fa:hover {
-    opacity: 0.7;
-}
-
-footer .fa-facebook {
-  background: #585858;
-  color: #F3F6F4;
-}
-
-footer .fa-linkedin {
-    background: #585858;
-    color: #F3F6F4;
-}
-
-footer .fa-instagram {
-    background: #585858;
-    color: #F3F6F4;
-}
-
-/*Her slutter stylingen af indholdet på PROJECTS undersiden*/
-
-
-/*Her starter stylingen af indholdet på about me undersiden*/
-.grid-container-aboutme {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header header"
-    "section section section section"
-    "main main main main"
-    "footer footer footer footer"
-    ;
-}
-
-header {
-    grid-area: header;
-    background-color: #2372F0;
-}
-
-section {
-    grid-area: section;
-    background-color: #F4B5EA;
-}
-
-section img {
-    width: 80%;
-    height: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-} 
-
-main {
-    grid-area: main;
-    background-color: #F4B5EA;
-    padding-bottom: 20px;
-}
-
-main h2 {
+.intro h2 {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 30px;
     text-align: center;
     padding: 20px;
-    color: #2372F0;
-    font-size: 25px;
-    font-weight: bolder;
 }
 
-main p {
+.intro p {
     color: #2372F0;
     margin-left: 5%;
     font-size: 18px;
@@ -331,7 +239,7 @@ main p {
     line-height: 28px;
 }
 
-main h3 {
+.intro h3 {
     color: #2372F0;
     margin-left: 5%;
     margin-right: 5%;
@@ -341,7 +249,7 @@ main h3 {
     line-height: 28px;
 }
 
-main h4 {
+.intro h4 {
     color: #2372F0;
     margin-right: 5%;
     margin-left: 5%;
@@ -350,334 +258,208 @@ main h4 {
     line-height: 28px;
 }
 
-footer {
-    grid-area: footer;
-    background-color: #F4B5EA;
+/*Styling slutter for about me siden*/
+
+/*Styling begynder for malibu siden*/
+
+.flex-container-malibu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-/*Her slutter stylingen af indholdet på about me undersiden*/
-
-
-/*Her starter stylingen af indholdet på malibu undersiden*/
-.grid-container-malibu {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header header"
-    "headline headline headline headline"
-    "picture1 picture1 picture1 picture1"
-    "picture2 picture2 picture2 picture2"
-    "picture3 picture3 picture3 picture3"
-    "endtekst endtekst endtekst endtekst"
-    "footer footer footer footer"
-    ;
-}
-
-header {
-    grid-area: header;
-    background-color: #2372F0;
-}
-
-.headline-tekst {
-    grid-area: headline;
-    background-color: #F4B5EA;
-}
-
-.headline-tekst h2 {
+.headline h2 {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     color: #2372F0;
-    font-size: 25px;
-    font-weight: bolder
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 50px;
 }
 
-.picture1 {
-    grid-area: picture1;
-    background-color: #F4B5EA;
+.malibu1 img {
+    height: 100%;
+    width: 100%;
+    margin-top: -20px;
 }
 
-.picture1 img {
-    width: 80%;
-    height: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 20px;
+.malibu2 img {
+    height: 100%;
+    width: 100%;
 }
 
-.picture2 {
-    grid-area: picture2;
-    background-color: #F4B5EA;
+.malibu3 img {
+    height: 100%;
+    width: 100%;
 }
 
-.picture2 img {
-    width: 80%;
-    height: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.picture3 {
-    grid-area: picture3;
-    background-color: #F4B5EA;
-}
-
-.picture3 img {
-    width: 80%;
-    height: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 20px;
-}
-
-.end-tekst {
-    grid-area: endtekst;
-    background-color: #F4B5EA;
-    padding-bottom: 20px;
-}
-
-.end-tekst h3 {
+.malibutekst h3 {
     color: #2372F0;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 28px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
-.end-tekst p {
+.malibutekst p {
     color: #2372F0;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 28px;
-    margin-left: 5%;
-    margin-right: 5%;
+}
+/*Styling slutter for malibu siden*/
+
+
+/*Styling begynder for folkdance siden*/
+.flex-container-folkdance {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-footer {
-    grid-area: footer;
-    background-color: darkkhaki;
-}
-
-/*Her slutter stylingen af indholdet på malibu undersiden*/
-
-
-/*Her starter stylingen af indholdet på folk dance undersiden*/
-.grid-container-folkdance {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header header"
-    "overskrift overskrift overskrift overskrift"
-    "folkdance1 folkdance1 folkdance1 folkdance1"
-    "folkdance2 folkdance2 folkdance2 folkdance2"
-    "folkdance3 folkdance3 folkdance3 folkdance3"
-    "folkdance folkdance folkdance folkdance"
-    "footer footer footer footer"
-    ;
-}
-
-header {
-    grid-area: header;
-    background-color: #2372F0;
-}
-
-.overskrift {
-    grid-area: overskrift;
-    background-color: #F4B5EA;
-}
-
-.overskrift h2 {
+.folkdanceheadline h2 {
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     color: #2372F0;
-    font-size: 25px;
-    font-weight: bolder
-}
-
-.folkdance1 {
-    grid-area: folkdance1;
-    background-color: #F4B5EA;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 60px;
 }
 
 .folkdance1 img {
-    width: 80%;
-    height: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 20px;
-}
-
-.folkdance2 {
-    grid-area: folkdance2;
-    background-color: #F4B5EA;
+    height: 100%;
+    width: 100%;
+    margin-top: -20px;
 }
 
 .folkdance2 img {
-    width: 80%;
-    height: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 20px;
-}
-
-.folkdance3 {
-    grid-area: folkdance3;
-    background-color: #F4B5EA;
+    height: 100%;
+    width: 100%;
 }
 
 .folkdance3 img {
-    width: 80%;
-    height: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 20px;
+    height: 100%;
+    width: 100%;
 }
 
-.folkdancecreds {
-    grid-area: folkdance;
-    background-color: #F4B5EA;
-    padding-bottom: 20px;
-}
-
-.folkdancecreds h3 {
+.folkdancetekst h3 {
     color: #2372F0;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 28px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
-.folkdancecreds p {
+.folkdancetekst p {
     color: #2372F0;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 28px;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
-footer {
-    grid-area: footer;
-    background-color: indigo;
+/*Styling slutter for folkdance siden*/
+
+
+/*Styling begynder for spaceodyssey siden*/
+.flex-container-spaceodyssey {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-
-/*Her slutter stylingen af indholdet på folk dance undersiden*/
-
-
-/*Her starter stylingen af indholdet på the space odyssey undersiden*/
-.grid-container-spaceodyssey {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header header"
-    "firsttekst firsttekst firsttekst firsttekst"
-    "spacebillede1 spacebillede1 spacebillede1 spacebillede1"
-    "spacebillede2 spacebillede2 spacebillede2 spacebillede2"
-    "spacebillede3 spacebillede3 spacebillede3 spacebillede3"
-    "spacecreds spacecreds spacecreds spacecreds"
-    "footer footer footer footer"
-    ;
-}
-
-header {
-    grid-area: header;
-    background-color: #2372F0;
-}
-
-.firsttekst {
-    grid-area: firsttekst;
-    background-color: #F4B5EA;
-}
-
-.firsttekst h2 {
+.spaceheadline h2 {
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     color: #2372F0;
-    font-size: 25px;
-    font-weight: bolder
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 60px;
 }
 
-.spacebillede1 {
-    grid-area: spacebillede1;
-    background-color: #F4B5EA;
+.space1 img {
+    height: 100%;
+    width: 100%;
+    margin-top: -10px;
 }
 
-.spacebillede1 img {
-    width: 80%;
-    height: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 20px;
+.space2 img {
+    height: 100%;
+    width: 100%;
 }
 
-.spacebillede2 {
-    grid-area: spacebillede2;
-    background-color: #F4B5EA;
+.space3 img {
+    height: 100%;
+    width: 100%;
 }
 
-.spacebillede2 img {
-    width: 80%;
-    height: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 20px;
-}
-
-.spacebillede3 {
-    grid-area: spacebillede3;
-    background-color: #F4B5EA;
-}
-
-.spacebillede3 img {
-    width: 80%;
-    height: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 20px;
-}
-
-.spacecreds {
-    grid-area: spacecreds;
-    background-color: #F4B5EA;
-    padding-bottom: 20px;
-}
-
-.spacecreds h3 {
+.spacetekst h3 {
     color: #2372F0;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 28px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
-.spacecreds p {
+.spacetekst p {
     color: #2372F0;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 28px;
-    margin-left: 5%;
-    margin-right: 5%;
 }
+/*Styling slutter for spaceodyssey siden*/
 
-footer {
-    grid-area: footer;
+/*styling af footer begynder*/
+footer{
     background-color: #F4B5EA;
+    display: flex;
+    text-align: center;
+    place-items: center;
+    justify-content: space-evenly;
+    justify-content: center;
 }
-/*Her slutter stylingen af indholdet på folk the space odyssey undersiden*/
 
-/*Responsive for desktop and tablet */
-@media (min-width: 768px) {
-    
-    
-  }
+.facebook {
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+}
 
-  
+.linkedin {
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+}
+
+.instagram {
+    height: 50px;
+    width: 50px;
+    opacity: 0.8;
+}
+
+.some-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #F3F6F4;
+    opacity: 0.8;
+}
+
+.some-footer a {
+    cursor: pointer;
+}
+
+.some-footer a:hover {
+    opacity: 0.6;
+}
+/*styling af footer slutter*/

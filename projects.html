@@ -9,71 +9,69 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-
+<!--Her begynder indjoldet på siden-->
 <body>
-    <div class="grid-container-projects">
-        <header>
-            <div class="navbar">
-                <a href="projects.html"><div class="logo"><h1>S</h1></div></a>
-                <section id="myNav" class="menu">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="menu-content">
-                        <a href="projects.html">PROJECTS</a>
-                        <a href="aboutme.html">ABOUT ME</a>
-                    </div>
-                </section>
-                
-                    <span onclick="openNav()">&#9776;</span>
+    <!--Her begynder indholdet til headeren-->
+    <header>
+        <a href="projects.html">
+        <h1 class="logo">S</h1>
+        </a>
+        <input id="toggler" class="toggler" type="checkbox">
+        <label for="toggler" class="burger">
+            <span><i class="fas fa-bars"></i></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                    <script>
-                        function openNav() {
-                        document.getElementById("myNav").style.width = "100%";
-                        }
 
-                        function closeNav() {
-                        document.getElementById("myNav").style.width = "0%";
-                        }
-                    </script>
-            </div>
-        </header>
-
-        <section class="frontpagepic1">
+    <!--Her begynder flexbox containeren-->
+    <div class="flex-container-projects">
+        <section class="welcome">
             <h2>PROJECTS</h2>
-            <div class="overlay-container">
-                <a href="malibu.html"><img src="./billeder/malibu1mobile.png" alt="malibu-forsidebillede" class="image1"></a>
-                <div class="overlay1">
-                    <div class="text">Hello World</div>
-                </div>
+        </section>
+        <section class="malibu">
+            <img src="./billeder/malibu1desktop2.png" alt="malibu">
+            <div class="overlay1">
+                <div class="text">Hello World</div>
             </div>
         </section>
 
-        <section class="frontpagepic2">
-            <a href="folkdance.html"><img src="./billeder/cover-imagemobile.jpg" alt="folkedans-forsidebillede"></a>
+        <section class="folkdance">
+            <img src="./billeder/cover-imagedesktop1.jpg" alt="folkdance">
         </section>
 
-        <section class="frontpagepic3">
-            <a href="spaceodyssey.html"><img src="./billeder/rumrejsenmobile.jpg" alt="rumrejse-forsidebillede"></a>
+        <section class="spaceodyssey">
+            <img src="./billeder/rumrejsenmobile.jpg" alt="space">
         </section>
 
-        <section class="frontpagepic4">
-            <img src="./billeder/madsportraitmobile.png" alt="madsportrait-forsidebillede">
+        <section class="portrait">
+            <img src="./billeder/madsportraitmobile.png" alt="video">
         </section>
 
-        <section class="frontpagepic5">
-            <img src="./billeder/belonglogomobile.jpg" alt="belong-forsidebillede">
+        <section class="belong">
+            <img src="./billeder/belonglogomobile.jpg" alt="belong">
         </section>
 
-        <section class="frontpagepic6">
-            <img src="./billeder/zumbapicturemobile.jpg" alt="zumba-forsidebillede">
+        <section class="zumba">
+            <img src="./billeder/zumbapicturemobile.jpg" alt="zumba">
         </section>
-
-        <footer>
-            <a href="https://www.facebook.com/sara.vujic/" target="_blank" class="fa fa-facebook" ></a>
-            <a href="https://www.linkedin.com/in/sara-vujic-6b2816167/" target="_blank" class="fa fa-linkedin"></a>
-            <a href="https://www.instagram.com/saravujic/" target="_blank" class="fa fa-instagram"></a>
-        </footer>
     </div>
+        
+    <!--Her begynder indholdet til footeren-->
+        <footer>
+            <section class="some-footer">
+                <a href="https://www.facebook.com/sara.vujic/" target="_blank"><img class="facebook" src="./billeder/facebooklogo.png" alt="facebooklogo"></a>
+                <a href="https://www.linkedin.com/in/sara-vujic-6b2816167/" target="_blank"><img class="linkedin" src="./billeder/linkedinlogo.png" alt="linkedinlogo"></a>
+                <a href="https://www.instagram.com/saravujic/" target="_blank"><img class="instagram" src="./billeder/instagramlogo.png" alt="instagramlogo"></a>
+            </section>
+        </footer>
 </body>
-
+ <!--Her slutter indholdet på siden-->
 </html>

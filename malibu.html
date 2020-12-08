@@ -8,62 +8,59 @@
     <title>S</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="grid-container-malibu">
-        <header>
-            <div class="navbar">
-                <a href="projects.html"><div class="logo"><h1>S</h1></div></a>
-                <section id="myNav" class="menu">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="menu-content">
-                        <a href="projects.html">PROJECTS</a>
-                        <a href="aboutme.html">ABOUT ME</a>
-                    </div>
-                </section>
-                
-                    <span onclick="openNav()">&#9776;</span>
+    <header>
+        <a href="projects.html">
+        <h1 class="logo">S</h1>
+        </a>
+        <input id="toggler" class="toggler" type="checkbox">
+        <label for="toggler" class="burger">
+            <span><i class="fas fa-bars"></i></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                    <script>
-                        function openNav() {
-                        document.getElementById("myNav").style.width = "100%";
-                        }
-
-                        function closeNav() {
-                        document.getElementById("myNav").style.width = "0%";
-                        }
-                    </script>
-            </div>
-        </header>
-
-        <section class="headline-tekst">
+    <div class="flex-container-malibu">
+        <section class="headline">
             <h2>MALIBU CONTENTKALENDER</h2>
         </section>
 
-        <section class="picture1">
-            <img src="./billeder/malibu1mobile.png" alt="malibu1">
+        <section class="malibu1">
+            <img src="billeder/malibu1desktop2.png" alt="malibu1">
         </section>
 
-        <section class="picture2">
-            <img src="./billeder/malibu2mobile.png" alt="malibu2">
+        <section class="malibu2">
+            <img src="./billeder/malibu2desktop.png" alt="malibu2">
         </section>
 
-        <section class="picture3">
-            <img src="./billeder/malibu3mobile.png" alt="malibu3">
+        <section class="malibu3">
+            <img src="./billeder/malibu3desktop.png" alt="malibu3">
         </section>
 
-        <section class="end-tekst">
+        <section class="malibutekst">
             <h3>CLIENT: MALIBU RUM</h3>
             <p>BELONG AGENCY, MARIA SCHÜMANN, 
                 ALBERTE BANG, SARA VUJIC, EMMA 
                 SØGAARD</p>
         </section>
-
-        <footer>
-            <p>her skal footer være</p>
-        </footer>
     </div>
-</body>
 
+<!--Her begynder indholdet til footeren-->
+    <footer>
+        <section class="some-footer">
+            <a href="https://www.facebook.com/sara.vujic/" target="_blank"><img class="facebook" src="./billeder/facebooklogo.png" alt="facebooklogo"></a>
+            <a href="https://www.linkedin.com/in/sara-vujic-6b2816167/" target="_blank"><img class="linkedin" src="./billeder/linkedinlogo.png" alt="linkedinlogo"></a>
+            <a href="https://www.instagram.com/saravujic/" target="_blank"><img class="instagram" src="./billeder/instagramlogo.png" alt="instagramlogo"></a>
+        </section>
+    </footer>
+
+</body>
 </html>

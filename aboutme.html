@@ -8,42 +8,31 @@
     <title>S</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="grid-container-aboutmed">
-        <header>
-            <div class="navbar">
-                <a href="projects.html"><div class="logo"><h1>S</h1></div></a>
-                <section id="myNav" class="menu">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="menu-content">
-                        <a href="projects.html">PROJECTS</a>
-                        <a href="aboutme.html">ABOUT ME</a>
-                    </div>
-                </section>
-                
-                    <span onclick="openNav()">&#9776;</span>
+    <header>
+        <a href="projects.html">
+        <h1 class="logo">S</h1>
+        </a>
+        <input id="toggler" class="toggler" type="checkbox">
+        <label for="toggler" class="burger">
+            <span><i class="fas fa-bars"></i></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                    <script>
-                        function openNav() {
-                        document.getElementById("myNav").style.width = "100%";
-                        }
-
-                        function closeNav() {
-                        document.getElementById("myNav").style.width = "0%";
-                        }
-                    </script>
-            </div>
-        </header>
-
-        <section>
-            <img src="./billeder/Sara.gif" alt="portraitgif">
-        </section>
-
-        <main>
-            <h2>ABOUT ME</h2>
-            <p>THIS IS SARA, THAT´S ME. I AM A YOUNG CREATIVE SOUL 
+    <div class="flex-container-aboutme">
+    <main class="intro">
+        <img src="./billeder/Sara.gif" alt="saragif">
+        <h2>ABOUT ME</h2>
+        <p>THIS IS SARA, THAT´S ME. I AM A YOUNG CREATIVE SOUL 
                 STUDYING MULTIMEDIA DESIGN IN COPENHAGEN. AS YOU 
                 PROBALY ALREADY SAW I AM IN LOVE WITH ALL PINK INVOLVED. 
                 BUT DON´T WORRY THERE IS NOT PINK IN EVERYTHING I AM 
@@ -52,16 +41,20 @@
                 HUGE PASSION FOR TRAVELLING WHICH BRINGS OUT A LOT OF IDEAS 
                 AND DIFFERENT VISIONS ON THE WORLD AND HAS A HUGE ROLE 
                 IN EXPANDING MY CREATIVITY.</p>
-            <h3>GIVE ME A CALL OR HIT ME UP ON MAIL 
-                IF YOU WANT TO KNOW MORE:</p3>  
-            <h4>+45 22207809</h4>
-            <h4>VUJIC.SARAHOTMAIL.COM</h4>      
-        </main>
-
-        <footer>
-            <p>footer</p>
-        </footer>
+        <h3>GIVE ME A CALL OR HIT ME UP ON MAIL 
+            IF YOU WANT TO KNOW MORE:</p3>  
+        <h4>+45 22207809</h4>
+        <h4>VUJIC.SARAHOTMAIL.COM</h4>
+    </main>
     </div>
-</body>
 
+    <!--Her begynder indholdet til footeren-->
+    <footer>
+        <section class="some-footer">
+            <a href="https://www.facebook.com/sara.vujic/" target="_blank"><img class="facebook" src="./billeder/facebooklogo.png" alt="facebooklogo"></a>
+            <a href="https://www.linkedin.com/in/sara-vujic-6b2816167/" target="_blank"><img class="linkedin" src="./billeder/linkedinlogo.png" alt="linkedinlogo"></a>
+            <a href="https://www.instagram.com/saravujic/" target="_blank"><img class="instagram" src="./billeder/instagramlogo.png" alt="instagramlogo"></a>
+        </section>
+    </footer>
+</body>
 </html>
