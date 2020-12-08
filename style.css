@@ -408,6 +408,7 @@ nav a {
     font-size: 17px;
     line-height: 28px;
     padding-bottom: 15px;
+    margin-left: 15px;
 }
 
 .malibutekst p {
@@ -415,6 +416,7 @@ nav a {
     font-weight: bolder;
     font-size: 17px;
     line-height: 28px;
+    margin-left: 15px;
 }
 /*Styling slutter for malibu siden*/
 
@@ -618,12 +620,39 @@ footer{
     .flex-container-aboutme {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     /*Responsiv på malibu siden*/
+    .flex-container-malibu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        justify-content:center;
+        place-items: center;
+    }
 
+    .malibu1 img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .malibu2 img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .malibu3 img {
+        height: 100%;
+        width: 100%;
+    }
     /*Responsiv på Folkdance siden*/
+    .flex-container-folkdance {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 
     /*Responsiv Space Odyssey side*/
     .flex-container-spaceodyssey {
