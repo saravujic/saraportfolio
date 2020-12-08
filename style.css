@@ -376,27 +376,30 @@ nav a {
 
 .headline h2 {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     color: #2372F0;
     font-size: 30px;
     font-weight: bolder;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .malibu1 img {
     height: 100%;
     width: 100%;
     margin-top: -20px;
+    padding: 20px;
 }
 
 .malibu2 img {
     height: 100%;
     width: 100%;
+    padding: 20px;
 }
 
 .malibu3 img {
     height: 100%;
     width: 100%;
+    padding: 20px;
 }
 
 .malibutekst h3 {
@@ -433,23 +436,26 @@ nav a {
     color: #2372F0;
     font-size: 30px;
     font-weight: bolder;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 
 .folkdance1 img {
     height: 100%;
     width: 100%;
     margin-top: -20px;
+    padding: 25px;
 }
 
 .folkdance2 img {
     height: 100%;
     width: 100%;
+    padding: 25px;
 }
 
 .folkdance3 img {
     height: 100%;
     width: 100%;
+    padding: 25px;
 }
 
 .folkdancetekst h3 {
@@ -483,11 +489,11 @@ nav a {
 .spaceheadline h2 {
     flex: 1;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     color: #2372F0;
     font-size: 30px;
     font-weight: bolder;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 
 .space1 img {
@@ -495,18 +501,21 @@ nav a {
     height: 100%;
     width: 100%;
     margin-top: -10px;
+    padding: 20px;
 }
 
 .space2 img {
     flex: 1;
     height: 100%;
     width: 100%;
+    padding: 20px;
 }
 
 .space3 img {
     flex: 1;
     height: 100%;
     width: 100%;
+    padding: 20px;
 }
 
 .spacetekst h3 {
