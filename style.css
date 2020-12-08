@@ -95,17 +95,12 @@ nav a {
     padding: 20px;
 }
 
-section {
-    margin: 20px;
-}
-
 .welcome h2 {
     color: #2372F0;
     font-weight: bolder;
     font-size: 30px;
     text-align: center;
-    padding-top: 30px;
-    display: flex;
+    padding-top: 100px;
     position: relative;
 }
 
@@ -113,6 +108,7 @@ section {
     width: 300px;
     height: 300px;
     display: block;
+    margin-bottom: 30px;
 }
 
 .malibu {
@@ -154,6 +150,7 @@ section {
     width: 300px;
     height: 300px;
     display: block;
+    margin-bottom: 30px;
 }
 
 .folkedance {
@@ -198,6 +195,7 @@ section {
     width: 300px;
     height: 300px;
     display: block;
+    margin-bottom: 30px;
 }
 
 .spaceodyssey {
@@ -229,6 +227,7 @@ section {
 
 .portrait {
     position: relative;
+    margin-bottom: 30px;
 }
 
 .overlay-video {
@@ -252,7 +251,9 @@ section {
     width: 300px;
     height: 300px;
     display: block;
+    margin-bottom: 30px;
 }
+
 .belong {
     position: relative;
 }
@@ -278,6 +279,7 @@ section {
     width: 300px;
     height: 300px;
     display: block;
+    margin-bottom: 30px;
 }
 
 .zumba {
@@ -601,17 +603,13 @@ footer{
         margin-bottom: 0;
         margin-right: 16px;
     }
-
-    /*responsiv projects side*/
-    .welcome h2 {
-        all: unset;
-    }
+   
 
     /*Responsiv på about me siden*/
     .flex-container-aboutme {
         display: flex;
         flex-direction: row;
-
+        flex-wrap: wrap;
     }
 
     /*Responsiv på malibu siden*/
