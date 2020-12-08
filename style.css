@@ -206,8 +206,9 @@ section {
 
 .text {
     color: white;
-    font-size: 15px;
-    margin: 3px;
+    font-size: 16px;
+    margin-left:-25px;
+    margin-right: -20px;
     padding: 20px;
     position: absolute;
     top: 50%;
@@ -216,6 +217,8 @@ section {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    justify-content: center;
+    place-items: center;
 }
 
 .spaceodyssey img {
@@ -248,16 +251,81 @@ section {
 .portrait img {
     width: 300px;
     height: 300px;
+    display: block;
+}
+
+.portrait {
+    position: relative;
+}
+
+.overlay-video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F4B5EA;
+}
+
+.portrait:hover .overlay-video {
+    opacity: 0.8;
 }
 
 .belong img {
     width: 300px;
     height: 300px;
+    display: block;
+}
+.belong {
+    position: relative;
+}
+
+.overlay-belong {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F4B5EA;
+}
+
+.belong:hover .overlay-belong {
+    opacity: 0.8;
 }
 
 .zumba img {
     width: 300px;
     height: 300px;
+    display: block;
+}
+
+.zumba {
+    position: relative;
+}
+
+.overlay-zumba {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F4B5EA;
+}
+
+.zumba:hover .overlay-zumba {
+    opacity: 0.8;
 }
 
 /*Styling slutter for projects siden*/
