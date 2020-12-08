@@ -157,13 +157,13 @@ section {
     opacity: 0;
     transition: .5s ease;
     background-color: #F4B5EA;
-  }
+}
   
-  .malibu:hover .overlay1 {
+.malibu:hover .overlay1 {
     opacity: 0.8;
-  }
+}
   
-  .text {
+.text {
     color: white;
     font-size: 15px;
     margin: 3px;
@@ -175,16 +175,74 @@ section {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
 
 .folkdance img {
     width: 300px;
     height: 300px;
+    display: block;
+}
+
+.folkedance {
+    position: relative;
+}
+
+.overlay-folkedance {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F4B5EA;
+}
+
+.folkdance:hover .overlay-folkedance {
+    opacity: 0.8;
+}
+
+.text {
+    color: white;
+    font-size: 15px;
+    margin: 3px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .spaceodyssey img {
     width: 300px;
     height: 300px;
+    display: block;
+}
+
+.spaceodyssey {
+    position: relative;
+}
+
+.overlay-space {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F4B5EA;
+}
+
+.spaceodyssey:hover .overlay-space {
+    opacity: 0.8;
 }
 
 .portrait img {
