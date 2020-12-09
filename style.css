@@ -543,6 +543,62 @@ nav a {
 }
 /*Styling slutter for spaceodyssey siden*/
 
+/*Styling starter for bag rattet siden*/
+.flex-container-bagrattet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.headline-bagrattet h2 {
+    text-align: center;
+    padding: 20px;
+    color: #2372F0;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 100px;
+}
+
+.bagrattet1 img {
+    height: 100%;
+    width: 100%;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+.bagrattet2 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.bagrattet3 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.bagrattettekst h3 {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+}
+
+.bagrattettekst p {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    margin-left: 15px;
+}
+/*Styling slutter for bag rattet siden*/
+
 /*Styling starter for video siden*/
 .flex-container-video {
     display: flex;
