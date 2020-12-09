@@ -543,6 +543,178 @@ nav a {
 }
 /*Styling slutter for spaceodyssey siden*/
 
+/*Styling starter for video siden*/
+.flex-container-video {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.headline-video h2 {
+    text-align: center;
+    padding: 20px;
+    color: #2372F0;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 100px;
+}
+
+.video1 img {
+    height: 100%;
+    width: 100%;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+.video2 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.video3 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.videotekst h3 {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+}
+
+.videotekst p {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    margin-left: 15px;
+}
+
+/*Styling slutter for video siden*/
+
+/*Styling starter for belong siden*/
+.flex-container-belong {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.headline-belong h2 {
+    text-align: center;
+    padding: 20px;
+    color: #2372F0;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 100px;
+}
+
+.belong1 img {
+    height: 100%;
+    width: 100%;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+.belong2 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.belong3 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.belongtekst h3 {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+}
+
+.belongtekst p {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    margin-left: 15px;
+}
+
+/*Styling slutter for belong siden*/
+
+/*Styling starter for zumba siden*/
+.flex-container-zumba {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.headline-zumba h2 {
+    text-align: center;
+    padding: 20px;
+    color: #2372F0;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 100px;
+}
+
+.zumba1 img {
+    height: 100%;
+    width: 100%;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+.zumba2 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.zumba3 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.zumbatekst h3 {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+}
+
+.zumbatekst p {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    margin-left: 15px;
+}
+
+/*Styling slutter for zumba siden*/
+
+
 /*styling af footer begynder*/
 footer{
     background-color: #F4B5EA;
@@ -588,7 +760,6 @@ footer{
     opacity: 0.6;
 }
 /*styling af footer slutter*/
-
 
 
 /*responsive for dekstop og tablet*/
