@@ -20,6 +20,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 100;
+    margin-top: 0;
 }
 
 .toggler {
@@ -81,38 +82,8 @@ nav a {
     align-items: center;
     cursor: pointer;
 }
-
-/*responsive for dekstop*/
-@media screen and (min-width:800px) {
-    .burger {
-        display: none;
-    }
-
-    header {
-        display: grid;
-        grid-template-columns: 1fr auto minmax(700px, 3fr);
-    }
-
-    nav {
-        display: flex;
-        grid-column: 3/4;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    nav ul {
-        all: unset;
-        list-style: none;
-        display: flex;
-    }
-
-    nav li {
-        margin-bottom: 0;
-        margin-right: 16px;
-    }
-}
-
 /*styling af navigationsbar og header slutter*/
+
 
 /*Styling begynder for projects siden*/
 .flex-container-projects {
@@ -124,22 +95,20 @@ nav a {
     padding: 20px;
 }
 
-section {
-    padding: 20px;
-}
-
 .welcome h2 {
     color: #2372F0;
     font-weight: bolder;
     font-size: 30px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 100px;
+    position: relative;
 }
 
 .malibu img {
     width: 300px;
     height: 300px;
     display: block;
+    margin-bottom: 30px;
 }
 
 .malibu {
@@ -156,16 +125,18 @@ section {
     width: 300px;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
-  }
+    background-color: #F4B5EA;
+}
   
-  .malibu:hover .overlay1 {
+.malibu:hover .overlay1 {
     opacity: 0.8;
-  }
+}
   
-  .text {
+.text {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
+    margin: 3px;
+    padding: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -173,31 +144,192 @@ section {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+    justify-content: center;
+}
 
 .folkdance img {
     width: 300px;
     height: 300px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.folkdance {
+    position: relative;
+}
+
+.overlay-folkdance {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F4B5EA;
+}
+
+.folkdance:hover .overlay-folkdance {
+    opacity: 0.8;
+}
+
+.text {
+    color: white;
+    font-size: 16px;
+    margin-left:-25px;
+    margin-right: -20px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
+    place-items: center;
 }
 
 .spaceodyssey img {
     width: 300px;
     height: 300px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.spaceodyssey {
+    position: relative;
+}
+
+.overlay-space {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F4B5EA;
+}
+
+.spaceodyssey:hover .overlay-space {
+    opacity: 0.8;
+}
+
+.bagrattet {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.bagrattet img {
+    width: 300px;
+    height: 300px;
+    display: block;
+}
+
+.overlay-bagrattet {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F4B5EA;
+} 
+
+.bagrattet:hover .overlay-bagrattet {
+    opacity: 0.8;
 }
 
 .portrait img {
     width: 300px;
     height: 300px;
+    display: block;
+}
+
+.portrait {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.overlay-video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F4B5EA;
+}
+
+.portrait:hover .overlay-video {
+    opacity: 0.8;
 }
 
 .belong img {
     width: 300px;
     height: 300px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.belong {
+    position: relative;
+}
+
+.overlay-belong {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F4B5EA;
+}
+
+.belong:hover .overlay-belong {
+    opacity: 0.8;
 }
 
 .zumba img {
     width: 300px;
     height: 300px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.zumba {
+    position: relative;
+}
+
+.overlay-zumba {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F4B5EA;
+}
+
+.zumba:hover .overlay-zumba {
+    opacity: 0.8;
 }
 
 /*Styling slutter for projects siden*/
@@ -221,7 +353,7 @@ section {
     padding: 10px;
     padding-top: 80px;
 }
-.intro h2 {
+.intro-tekst h2 {
     color: #2372F0;
     font-weight: bolder;
     font-size: 30px;
@@ -229,7 +361,7 @@ section {
     padding: 20px;
 }
 
-.intro p {
+.intro-tekst p {
     color: #2372F0;
     margin-left: 5%;
     font-size: 18px;
@@ -239,7 +371,7 @@ section {
     line-height: 28px;
 }
 
-.intro h3 {
+.intro-tekst h3 {
     color: #2372F0;
     margin-left: 5%;
     margin-right: 5%;
@@ -249,7 +381,7 @@ section {
     line-height: 28px;
 }
 
-.intro h4 {
+.intro-tekst h4 {
     color: #2372F0;
     margin-right: 5%;
     margin-left: 5%;
@@ -273,27 +405,30 @@ section {
 
 .headline h2 {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     color: #2372F0;
     font-size: 30px;
     font-weight: bolder;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .malibu1 img {
     height: 100%;
     width: 100%;
     margin-top: -20px;
+    padding: 20px;
 }
 
 .malibu2 img {
     height: 100%;
     width: 100%;
+    padding: 20px;
 }
 
 .malibu3 img {
     height: 100%;
     width: 100%;
+    padding: 20px;
 }
 
 .malibutekst h3 {
@@ -302,6 +437,7 @@ section {
     font-size: 17px;
     line-height: 28px;
     padding-bottom: 15px;
+    margin-left: 15px;
 }
 
 .malibutekst p {
@@ -309,6 +445,7 @@ section {
     font-weight: bolder;
     font-size: 17px;
     line-height: 28px;
+    margin-left: 15px;
 }
 /*Styling slutter for malibu siden*/
 
@@ -326,27 +463,31 @@ section {
     display: flex;
     flex-direction: row;
     text-align: center;
+    justify-content: center;
     padding: 10px;
     color: #2372F0;
     font-size: 30px;
     font-weight: bolder;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 
 .folkdance1 img {
     height: 100%;
     width: 100%;
     margin-top: -20px;
+    padding: 25px;
 }
 
 .folkdance2 img {
     height: 100%;
     width: 100%;
+    padding: 25px;
 }
 
 .folkdance3 img {
     height: 100%;
     width: 100%;
+    padding: 25px;
 }
 
 .folkdancetekst h3 {
@@ -355,6 +496,7 @@ section {
     font-size: 17px;
     line-height: 28px;
     padding-bottom: 15px;
+    margin-left: 15px;
 }
 
 .folkdancetekst p {
@@ -362,6 +504,7 @@ section {
     font-weight: bolder;
     font-size: 17px;
     line-height: 28px;
+    margin-left: 15px;
 }
 
 /*Styling slutter for folkdance siden*/
@@ -370,6 +513,7 @@ section {
 /*Styling begynder for spaceodyssey siden*/
 .flex-container-spaceodyssey {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
@@ -377,47 +521,284 @@ section {
 }
 
 .spaceheadline h2 {
-    display: flex;
-    flex-direction: row;
+    flex: 1;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     color: #2372F0;
     font-size: 30px;
     font-weight: bolder;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 
 .space1 img {
+    flex: 1;
     height: 100%;
     width: 100%;
     margin-top: -10px;
+    padding: 20px;
 }
 
 .space2 img {
+    flex: 1;
     height: 100%;
     width: 100%;
+    padding: 20px;
 }
 
 .space3 img {
+    flex: 1;
     height: 100%;
     width: 100%;
+    padding: 20px;
 }
 
 .spacetekst h3 {
+    flex: 1;
     color: #2372F0;
     font-weight: bolder;
     font-size: 17px;
     line-height: 28px;
     padding-bottom: 15px;
+    margin-left: 15px;
 }
 
 .spacetekst p {
+    flex: 1;
     color: #2372F0;
     font-weight: bolder;
     font-size: 17px;
     line-height: 28px;
+    margin-left: 15px;
 }
 /*Styling slutter for spaceodyssey siden*/
+
+/*Styling starter for bag rattet siden*/
+.flex-container-bagrattet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.headline-bagrattet h2 {
+    text-align: center;
+    padding: 20px;
+    color: #2372F0;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 100px;
+}
+
+.bagrattet1 img {
+    height: 100%;
+    width: 100%;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+.bagrattet2 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.bagrattet3 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.bagrattettekst h3 {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+}
+
+.bagrattettekst p {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    margin-left: 15px;
+}
+/*Styling slutter for bag rattet siden*/
+
+/*Styling starter for video siden*/
+.flex-container-video {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.headline-video h2 {
+    text-align: center;
+    padding: 20px;
+    color: #2372F0;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 100px;
+}
+
+.video1 img {
+    height: 100%;
+    width: 100%;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+.video2 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.video3 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.videotekst h3 {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+}
+
+.videotekst p {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    margin-left: 15px;
+}
+
+/*Styling slutter for video siden*/
+
+/*Styling starter for belong siden*/
+.flex-container-belong {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.headline-belong h2 {
+    text-align: center;
+    padding: 20px;
+    color: #2372F0;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 100px;
+}
+
+.belong1 img {
+    height: 100%;
+    width: 100%;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+.belong2 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.belong3 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.belongtekst h3 {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+}
+
+.belongtekst p {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    margin-left: 15px;
+}
+
+/*Styling slutter for belong siden*/
+
+/*Styling starter for zumba siden*/
+.flex-container-zumba {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.headline-zumba h2 {
+    text-align: center;
+    padding: 20px;
+    color: #2372F0;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 100px;
+}
+
+.zumba1 img {
+    height: 100%;
+    width: 100%;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+.zumba2 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.zumba3 img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.zumbatekst h3 {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+}
+
+.zumbatekst p {
+    color: #2372F0;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 28px;
+    margin-left: 15px;
+}
+
+/*Styling slutter for zumba siden*/
+
 
 /*styling af footer begynder*/
 footer{
@@ -427,6 +808,7 @@ footer{
     place-items: center;
     justify-content: space-evenly;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .facebook {
@@ -463,3 +845,226 @@ footer{
     opacity: 0.6;
 }
 /*styling af footer slutter*/
+
+
+/*responsive for dekstop og tablet*/
+@media screen and (min-width:800px) {
+    /*Responsiv navbar*/
+    .burger {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(700px, 3fr);
+    }
+
+    nav {
+        display: flex;
+        grid-column: 3/4;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        all: unset;
+        list-style: none;
+        display: flex;
+    }
+
+    nav li {
+        margin-bottom: 0;
+        margin-right: 16px;
+    }
+   
+    /*Responsive på projects siden*/
+
+
+    .bagrattet img {
+        display: flex;
+        width: 60%;
+        height: auto;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        justify-content: center;
+        margin-left: 230px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .overlay-bagrattet {
+        width: 60%;
+        height: auto;
+        left: 230px;
+    }
+    /*Responsiv på about me siden*/
+    .flex-container-aboutme {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .intro img {
+        width: 80%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        margin-left: 50px;
+        margin-top: 100px;
+        padding-top: 50px;
+    }
+
+    .intro-tekst{
+        width: 600px;
+        margin-top: 100px;
+    }
+
+    /*Responsiv på malibu siden*/
+    .flex-container-malibu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        justify-content:center;
+        place-items: center;
+    }
+
+    .malibu1 img {
+        height: 400px;
+        width: 400px;
+        margin: 0;
+    }
+
+    .malibu2 img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .malibu3 img {
+        height: 400px;
+        width: 400px;
+    }
+    /*Responsiv på Folkdance siden*/
+    .flex-container-folkdance {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .folkdance1 img {
+        height: 400px;
+        width: 400px;
+        margin: 0;
+    }
+
+    .folkdance2 img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .folkdance3 img {
+        height: 400px;
+        width: 400px;
+    }
+    /*Responsiv Space Odyssey side*/
+    .flex-container-spaceodyssey {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .space1 img {
+        height: 375px;
+        width: 375px;
+        margin: 0;
+    }
+
+    .space2 img {
+        height: 375px;
+        width: 375px;
+    }
+
+    .space3 img {
+        height: 375px;
+        width: 375px;
+    }
+
+    /*Responsiv Bag rattet side*/
+    .flex-container-bagrattet {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .bagrattet1 img {
+        height: 375px;
+        width: 375px;
+        margin: 0;
+    }
+
+    .bagrattet2 img {
+        height: 375px;
+        width: 375px;
+    }
+
+    .bagrattet3 img {
+        height: 375px;
+        width: 375px;
+    }
+
+    /*Responsiv Video side*/
+
+    /*Responsiv Belong side*/
+    .flex-container-belong {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .belong1 img {
+        height: 375px;
+        width: 375px;
+        margin: 0;
+    }
+
+    .belong2 img {
+        height: 375px;
+        width: 375px;
+    }
+
+    .belong3 img {
+        height: 375px;
+        width: 375px;
+    }
+
+    /*Responsiv Zumba side*/
+    .flex-container-zumba {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        justify-content: center;
+    }
+
+    .zumba1 img {
+        height: 375px;
+        width: 375px;
+        margin: 0;
+    }
+
+    .zumba2 img {
+        height: 375px;
+        width: 375px; 
+    }
+
+    .zumba3 img {
+        height: 375px;
+        width: 375px;
+    }
+
+}
+/*Responsive til dekstop og tablet slutter*/
+
+/*Stylingen slutter her*/
