@@ -932,6 +932,7 @@ footer{
     .malibu1 img {
         height: 400px;
         width: 400px;
+        margin: 0;
     }
 
     .malibu2 img {
@@ -953,6 +954,7 @@ footer{
     .folkdance1 img {
         height: 400px;
         width: 400px;
+        margin: 0;
     }
 
     .folkdance2 img {
@@ -975,6 +977,7 @@ footer{
     .space1 img {
         height: 375px;
         width: 375px;
+        margin: 0;
     }
 
     .space2 img {
@@ -988,12 +991,79 @@ footer{
     }
 
     /*Responsiv Bag rattet side*/
+    .flex-container-bagrattet {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .bagrattet1 img {
+        height: 375px;
+        width: 375px;
+        margin: 0;
+    }
+
+    .bagrattet2 img {
+        height: 375px;
+        width: 375px;
+    }
+
+    .bagrattet3 img {
+        height: 375px;
+        width: 375px;
+    }
 
     /*Responsiv Video side*/
 
     /*Responsiv Belong side*/
+    .flex-container-belong {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .belong1 img {
+        height: 375px;
+        width: 375px;
+        margin: 0;
+    }
+
+    .belong2 img {
+        height: 375px;
+        width: 375px;
+    }
+
+    .belong3 img {
+        height: 375px;
+        width: 375px;
+    }
 
     /*Responsiv Zumba side*/
+    .flex-container-zumba {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        justify-content: center;
+    }
+
+    .zumba1 img {
+        height: 375px;
+        width: 375px;
+        margin: 0;
+    }
+
+    .zumba2 img {
+        height: 375px;
+        width: 375px; 
+    }
+
+    .zumba3 img {
+        height: 375px;
+        width: 375px;
+    }
+
 }
 /*Responsive til dekstop og tablet slutter*/
 
