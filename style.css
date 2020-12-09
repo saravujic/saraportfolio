@@ -144,6 +144,7 @@ nav a {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    justify-content: center;
 }
 
 .folkdance img {
@@ -153,11 +154,11 @@ nav a {
     margin-bottom: 30px;
 }
 
-.folkedance {
+.folkdance {
     position: relative;
 }
 
-.overlay-folkedance {
+.overlay-folkdance {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -170,7 +171,7 @@ nav a {
     background-color: #F4B5EA;
 }
 
-.folkdance:hover .overlay-folkedance {
+.folkdance:hover .overlay-folkdance {
     opacity: 0.8;
 }
 
@@ -216,6 +217,34 @@ nav a {
 }
 
 .spaceodyssey:hover .overlay-space {
+    opacity: 0.8;
+}
+
+.bagrattet {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.bagrattet img {
+    width: 300px;
+    height: 300px;
+    display: block;
+}
+
+.overlay-bagrattet {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F4B5EA;
+} 
+
+.bagrattet:hover .overlay-bagrattet {
     opacity: 0.8;
 }
 
@@ -848,7 +877,26 @@ footer{
         margin-right: 16px;
     }
    
+    /*Responsive på projects siden*/
 
+
+    .bagrattet img {
+        display: flex;
+        width: 60%;
+        height: auto;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        justify-content: center;
+        margin-left: 230px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .overlay-bagrattet {
+        width: 60%;
+        height: auto;
+        left: 230px;
+    }
     /*Responsiv på about me siden*/
     .flex-container-aboutme {
         display: flex;
@@ -939,4 +987,14 @@ footer{
         width: 375px;
     }
 
+    /*Responsiv Bag rattet side*/
+
+    /*Responsiv Video side*/
+
+    /*Responsiv Belong side*/
+
+    /*Responsiv Zumba side*/
 }
+/*Responsive til dekstop og tablet slutter*/
+
+/*Stylingen slutter her*/
