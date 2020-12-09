@@ -324,7 +324,7 @@ nav a {
     padding: 10px;
     padding-top: 80px;
 }
-.intro h2 {
+.intro-tekst h2 {
     color: #2372F0;
     font-weight: bolder;
     font-size: 30px;
@@ -332,7 +332,7 @@ nav a {
     padding: 20px;
 }
 
-.intro p {
+.intro-tekst p {
     color: #2372F0;
     margin-left: 5%;
     font-size: 18px;
@@ -342,7 +342,7 @@ nav a {
     line-height: 28px;
 }
 
-.intro h3 {
+.intro-tekst h3 {
     color: #2372F0;
     margin-left: 5%;
     margin-right: 5%;
@@ -352,7 +352,7 @@ nav a {
     line-height: 28px;
 }
 
-.intro h4 {
+.intro-tekst h4 {
     color: #2372F0;
     margin-right: 5%;
     margin-left: 5%;
@@ -626,7 +626,23 @@ footer{
     .flex-container-aboutme {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .intro img {
+        width: 80%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        margin-left: 80px;
+        margin-top: 100px;
+        padding-top: 50px;
+    }
+
+    .intro-tekst{
+        width: 700px;
+        margin-top: 100px;
+        margin-right: 50px;
     }
 
     /*Responsiv på malibu siden*/
