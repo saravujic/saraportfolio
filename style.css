@@ -885,38 +885,108 @@ footer{
     }
    
     /*Responsive på projects siden*/
+    .flex-container-projects {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 
+    .malibu img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .overlay1 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .folkdance img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .overlay-folkdance {
+        width: 400px;
+        height: 400px;
+    }
+
+    .spaceodyssey img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .overlay-space {
+        width: 400px;
+        height: 400px;
+    }
 
     .bagrattet img {
         display: flex;
-        width: 60%;
+        width: 800px;
         height: auto;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        justify-content: center;
-        margin-left: 230px;
         padding-top: 30px;
         padding-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
 
     .overlay-bagrattet {
-        width: 60%;
+        width: 800px;
         height: auto;
-        left: 230px;
+        margin-left: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
+
+    .portrait img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .overlay-video {
+        width: 400px;
+        height: 400px;
+    }
+
+    .belong img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .overlay-belong {
+        width: 400px;
+        height: 400px;
+    }
+
+    .zumba img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .overlay-zumba {
+        width: 400px;
+        height: 400px;
+    }
+
+
     /*Responsiv på about me siden*/
     .flex-container-aboutme {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        justify-content: center;
     }
 
     .intro img {
-        width: 80%;
+        width: 100%;
         height: auto;
         margin: 0;
         padding: 0;
-        margin-left: 50px;
         margin-top: 100px;
         padding-top: 50px;
     }
@@ -937,20 +1007,25 @@ footer{
     }
 
     .malibu1 img {
-        height: 400px;
-        width: 400px;
+        height: 435px;
+        width: 435px;
         margin: 0;
     }
 
     .malibu2 img {
-        height: 400px;
-        width: 400px;
+        height: 435px;
+        width: 435px;
     }
 
     .malibu3 img {
-        height: 400px;
-        width: 400px;
+        height: 435px;
+        width: 435px;
     }
+
+    .malibutekst {
+        padding-left: 40px;
+    }
+
     /*Responsiv på Folkdance siden*/
     .flex-container-folkdance {
         display: flex;
@@ -959,20 +1034,25 @@ footer{
     }
 
     .folkdance1 img {
-        height: 400px;
-        width: 400px;
+        height: 435px;
+        width: 435px;
         margin: 0;
     }
 
     .folkdance2 img {
-        height: 400px;
-        width: 400px;
+        height: 435px;
+        width: 435px;
     }
 
     .folkdance3 img {
-        height: 400px;
-        width: 400px;
+        height: 435px;
+        width: 435px;
     }
+
+    .folkdancetekst {
+        padding-left: 40px;
+    }
+
     /*Responsiv Space Odyssey side*/
     .flex-container-spaceodyssey {
         display: flex;
@@ -982,19 +1062,23 @@ footer{
     }
 
     .space1 img {
-        height: 375px;
-        width: 375px;
+        height: 435px;
+        width: 435px;
         margin: 0;
     }
 
     .space2 img {
-        height: 375px;
-        width: 375px;
+        height: 435px;
+        width: 435px;
     }
 
     .space3 img {
-        height: 375px;
-        width: 375px;
+        height: 435px;
+        width: 435px;
+    }
+
+    .spacetekst {
+        padding-left: 40px;
     }
 
     /*Responsiv Bag rattet side*/
@@ -1006,19 +1090,23 @@ footer{
     }
 
     .bagrattet1 img {
-        height: 375px;
-        width: 375px;
+        height: 435px;
+        width: 435px;
         margin: 0;
     }
 
     .bagrattet2 img {
-        height: 375px;
-        width: 375px;
+        height: 435px;
+        width: 435px;
     }
 
     .bagrattet3 img {
-        height: 375px;
-        width: 375px;
+        height: 435px;
+        width: 435px;
+    }
+
+    .bagrattettekst {
+        padding-left: 40px;
     }
 
     /*Responsiv Video side*/
@@ -1030,21 +1118,24 @@ footer{
     }
 
     .video1 img {
-        height: 375px;
-        width: 375px;
+        height: 435px;
+        width: 435px;
         margin: 0;
     }
 
     .video2 img {
-        height: 375px;
-        width: 375px;
+        height: 435px;
+        width: 435px;
     }
 
     .video3 img {
-        height: 375px;
-        width: 375px;
+        height: 435px;
+        width: 435px;
     }
 
+    .videotekst {
+        padding-left: 40px;
+    }
 
     /*Responsiv Belong side*/
     .flex-container-belong {
@@ -1055,19 +1146,23 @@ footer{
     }
 
     .belong1 img {
-        height: 375px;
-        width: 375px;
+        height: 435px;
+        width: 435px;
         margin: 0;
     }
 
     .belong2 img {
-        height: 375px;
-        width: 375px;
+        height: 435px;
+        width: 435px;
     }
 
     .belong3 img {
-        height: 375px;
-        width: 375px;
+        height: 435px;
+        width: 435px;
+    }
+
+    .belongtekst {
+        padding-left: 40px;
     }
 
     /*Responsiv Zumba side*/
@@ -1079,19 +1174,28 @@ footer{
     }
 
     .zumba1 img {
-        height: 375px;
-        width: 375px;
+        height: 435px;
+        width: 435px;
         margin: 0;
     }
 
     .zumba2 img {
-        height: 375px;
-        width: 375px; 
+        height: 435px;
+        width: 435px; 
     }
 
     .zumba3 img {
-        height: 375px;
-        width: 375px;
+        height: 435px;
+        width: 435px;
+    }
+
+    .zumbatekst {
+        padding-left: 40px;
+    }
+
+    /*Footer responsiv*/
+    .some-footer {
+        padding-bottom: 50px;
     }
 
 }
