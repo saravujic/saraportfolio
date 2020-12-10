@@ -885,25 +885,95 @@ footer{
     }
    
     /*Responsive på projects siden*/
+    .flex-container-projects {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 
+    .malibu img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .overlay1 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .folkdance img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .overlay-folkdance {
+        width: 400px;
+        height: 400px;
+    }
+
+    .spaceodyssey img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .overlay-space {
+        width: 400px;
+        height: 400px;
+    }
 
     .bagrattet img {
         display: flex;
-        width: 60%;
+        width: 800px;
         height: auto;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        justify-content: center;
-        margin-left: 230px;
         padding-top: 30px;
         padding-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
 
     .overlay-bagrattet {
-        width: 60%;
+        width: 800px;
         height: auto;
-        left: 230px;
+        margin-left: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
+
+    .portrait img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .overlay-video {
+        width: 400px;
+        height: 400px;
+    }
+
+    .belong img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .overlay-belong {
+        width: 400px;
+        height: 400px;
+    }
+
+    .zumba img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .overlay-zumba {
+        width: 400px;
+        height: 400px;
+    }
+
+
     /*Responsiv på about me siden*/
     .flex-container-aboutme {
         display: flex;
@@ -1092,6 +1162,11 @@ footer{
     .zumba3 img {
         height: 375px;
         width: 375px;
+    }
+
+    /*Footer responsiv*/
+    .some-footer {
+        padding-bottom: 50px;
     }
 
 }
