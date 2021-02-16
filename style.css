@@ -156,7 +156,7 @@ nav a {
 }
 
 /*Hover effekt på folkdance billede*/
-.folkdance {
+.podcast {
     position: relative;
 }
 
@@ -458,7 +458,7 @@ nav a {
 
 
 /*Styling begynder for folkdance siden*/
-.flex-container-folkdance {
+.flex-container-podcast {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -466,7 +466,7 @@ nav a {
     margin-bottom: 20px;
 }
 
-.folkdanceheadline h2 {
+.podcastheadline h2 {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -497,7 +497,7 @@ nav a {
     padding: 25px;
 }
 
-.folkdancetekst h3 {
+.podcasttekst h3 {
     color: #2372F0;
     font-weight: bolder;
     font-size: 17px;
@@ -506,7 +506,7 @@ nav a {
     margin-left: 15px;
 }
 
-.folkdancetekst p {
+.podcasttekst p {
     color: #2372F0;
     font-weight: bolder;
     font-size: 17px;
